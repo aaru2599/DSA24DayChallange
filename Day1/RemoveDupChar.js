@@ -4,7 +4,7 @@
  *  Step03:Treaverse every char via loop
  *         compare every element with each other
  *         if comparision is true remove the element from its place with splice() 
- *  Step04:Convert Arrau into string with join()function
+ *  Step04:Convert Array into string with join()function
   
  */
 function dupChar(params) {
