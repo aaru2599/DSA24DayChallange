@@ -6,6 +6,7 @@ function LargestTwo(input) {
                 temp=input[i];
                 input[i]=input[j];
                 input[j]=temp
+                // console.log(input);
                 lastTwoElem=[input[input.length-2],input[input.length-1]]
             }
         }
