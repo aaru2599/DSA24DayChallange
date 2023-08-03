@@ -1,3 +1,5 @@
+// Remove Character and numbers in a string
+
 let CharNum=(str)=> {
     str=str.toLowerCase();
 
