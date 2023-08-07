@@ -1,14 +1,12 @@
-let ReverseNum=(num)=>{
-      revNum="";
-    var newNum=num.toString()
-  for(let i=newNum.length;i>=0;i--){
-    // console.log(newNum[i]);
-      revNum=revNum+newNum[i]
-    //  console.log(typeOf(revNum));
+// Reverse of a nuber using converting into string with or withour builtin methods
 
-  }
-  console.log(typeof(revNum));
-  return revNum
+let ReverseNum=(num)=>{
+    let newNum=num.toString()
+      let arr=newNum.split("").reverse().join("")
+      console.log(typeof(arr));
+      const digit=parseInt(arr)
+      console.log(typeof(digit));
+      return arr
   
 
 

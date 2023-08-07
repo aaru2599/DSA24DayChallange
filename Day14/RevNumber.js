@@ -25,3 +25,5 @@ let revNum=(num)=>{
     // return result
 }
 console.log((revNum(1234)));
+
+
