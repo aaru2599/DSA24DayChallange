@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function ConsecutiveNumber(input) {
+    let arr = input.sort();
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+             return `Not a consecutive since ${arr[i]} is repeating`
+            }
+        }
+        const newArr=[];
+        for(let i=1;i<=10;i++){
+            newArr.push(i)
+        }
+        return newArr
+    }
+
+}
+const inputA = [ 4,2, 4, 3, 1];
+
+console.log(ConsecutiveNumber(inputA));
+</script>
