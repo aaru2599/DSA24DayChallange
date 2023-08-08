@@ -1,5 +1,8 @@
 // To find the second largest number in an array
 let secondLargest=(input)=>{
+    
+   
+
 
     let arr=input.sort()
     console.log(arr);
