@@ -29,27 +29,37 @@ const p = [
       isActive: true,
     },
   ];
-  const findIsActive=p.map((input)=>{
-    if(input.isActive==true){
-        return {
-            id:input.id,
-            name:input.name,
-            city:input.city,
-            state:input.state,
-            isActive:"available"
-        };
-    }
+
+
+  const findIsActive=p.map((input)=>({
+    ...input,
+    isActive:input.isActive?"Available":"NotAvailable"
+
+   }
+
+  ))
+//   console.log(...input);
+//   const findIsActive=p.map((input)=>{
+//     if(input.isActive==true){
+//         return {
+//             id:input.id,
+//             name:input.name,
+//             city:input.city,
+//             state:input.state,
+//             isActive:"available"
+//         };
+//     }
     
-        return{
+//         return{
             
-                id:input.id,
-                name:input.name,
-                city:input.city,
-                state:input.state,
-                isActive:"notAvailable"
+//                 id:input.id,
+//                 name:input.name,
+//                 city:input.city,
+//                 state:input.state,
+//                 isActive:"notAvailable"
           
         
-    }
-  })
+//     }
+//   })
   console.log(findIsActive);
   
