@@ -4,13 +4,13 @@
 // // Output
 // [2, 3, 4, 5];
 
-let elemAdd=(input)=>{
-    let newArr=[];
-for(let i=0;i<input.length;i++){
-    let elem=input[i]+1
-    newArr.push(elem)
-}
-return newArr
+let elemAdd = (input) => {
+    let newArr = [];
+    for (let i = 0; i < input.length; i++) {
+        let elem = input[i] + 1
+        newArr.push(elem)
+    }
+    return newArr
 
 }
 const input = [1, 2, 3, 4];

@@ -10,7 +10,7 @@
 let findKthSmallestOrLargest = (input, n) => {
     let arr = input.sort()
     let obj = {};
-    obj.smallest = arr[0 + n - 1]
+    obj.smallest = arr[ n - 1]
     obj.largest = arr[arr.length - n]
 
     return obj

@@ -33,4 +33,4 @@ else {
     return "Not a prime"
 }
 }
-console.log(PrimeNumber(5));
+console.log(PrimeNumber(7));

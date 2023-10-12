@@ -24,7 +24,8 @@ function SwapElement(input) {
         containerArray.push(0)
     }
     return containerArray
-    
+
+        
 }
 let arr=[1,1,1,0,0,0,1,1,1,1,0,0,0,1,1,0,0]
 console.log(SwapElement(arr));
