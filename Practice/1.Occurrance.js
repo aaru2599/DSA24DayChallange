@@ -17,10 +17,14 @@ const findOccurrance = (input) => {
     let newStr = input.toLowerCase();
 
     const newObj = {};
+
     for (let i = 0; i < newStr.length; i++) {
-        var charKey=newStr[i]
+        var charKey = newStr[i]
+
         if (charKey !== " ") {
-            newObj.hasOwnProperty(charKey) ? (newObj[charKey] = newObj[charKey] + 1) : (newObj[charKey] = 1);
+            newObj.hasOwnProperty(charKey) ?
+                (newObj[charKey] = newObj[charKey] + 1) :
+                (newObj[charKey] = 1);
         }
     }
     return newObj;
