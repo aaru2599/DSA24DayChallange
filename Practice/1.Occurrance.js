@@ -11,6 +11,27 @@
  * step4:return Object              
  */
 
+
+// with ternary operator
+const findOccurrance = (input) => {
+    let newStr = input.toLowerCase();
+
+    const newObj = {};
+    for (let i = 0; i < newStr.length; i++) {
+        var charKey=newStr[i]
+        if (charKey !== " ") {
+            newObj.hasOwnProperty(charKey) ? (newObj[charKey] = newObj[charKey] + 1) : (newObj[charKey] = 1);
+        }
+    }
+    return newObj;
+};
+
+let string = "Ankit jain";
+console.log(findOccurrance(string));
+
+
+
+
 // With if else Statement
 
 // const findOccurrance = (input) => {
@@ -33,19 +54,3 @@
 // console.log(findOccurrance(string));
 
 
-// with ternary operator
-const findOccurrance = (input) => {
-    let newStr = input.toLowerCase();
-
-    const newObj = {};
-    for (let i = 0; i < newStr.length; i++) {
-        var charKey=newStr[i]
-        if (charKey !== " ") {
-            newObj.hasOwnProperty(charKey) ? (newObj[charKey] = newObj[charKey] + 1) : (newObj[charKey] = 1);
-        }
-    }
-    return newObj;
-};
-
-let string = "Ankit jain";
-console.log(findOccurrance(string));
