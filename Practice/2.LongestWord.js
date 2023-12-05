@@ -25,3 +25,8 @@ const longestWord = (input) => {
 }
 let string = "Hello my name is Ankit , i am from morena"
 console.log(longestWord(string));
+
+
+
+
+
