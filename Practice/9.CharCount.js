@@ -9,3 +9,5 @@ return count
 }
 const str = "AAAABBBCCDAA"
 console.log(charCount(str));
+
+
