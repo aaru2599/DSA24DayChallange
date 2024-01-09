@@ -1,4 +1,4 @@
-const swanTwoNum=()=>{
+const swapTwoNum=()=>{
     let a=5;
     let b=6;
     a=a+b;
@@ -9,4 +9,4 @@ const swanTwoNum=()=>{
     console.log(a);
 
 }
-console.log(swanTwoNum());
+console.log(swapTwoNum());
