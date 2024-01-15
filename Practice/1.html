@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function CurryingSum(a) {
+            let sum = a;
+
+            function addNext(b) {
+                sum += b;
+                return addNext;
+            }
+
+            addNext.toString = function () {
+                return sum;
+            };
+
+            return addNext;
+        }
+
+        console.log(CurryingSum(10)(20)(20));
+        console.log(CurryingSum(10)(20)(20)(10));
+
+    </script>
+</body>
+
+</html>
