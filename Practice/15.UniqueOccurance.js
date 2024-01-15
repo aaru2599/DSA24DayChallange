@@ -33,6 +33,12 @@
 /**
  * @param {number[]} arr
  * @return {boolean}
+ * 
+ * Step1:First find the occurance count of every element
+ * Step2:Push into the object
+ * Step3:Convert the values of object into the array
+ * Step4:Push that array into set so duplicates will remove
+ * Step5:Then compare the length old array and new set array and return it. 
  */
 var uniqueOccurrences = function (arr) {
     let obj = {};
