@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        const obj={"2":"5"}
+        function outer(obj){
+            var a=10
+            console.log("normal",this);
+        }
+        
+        outer(obj)
+        const arrowFunc=()=>{
+        console.log("arrow:",this);
+            console.log(c);
+        }
+        arrowFunc()
+    </script>
+</body>
+</html>
