@@ -16,7 +16,7 @@
                 this.fuel = fuel
             }
             function setBrand(brand) {
-                Car.call(this, "portable", "electric");
+                Car.bind(this,[ "portable", "electric"]);
                 this.brand = brand;
                 console.log("Car11", Car);
 
