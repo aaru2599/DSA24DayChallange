@@ -185,7 +185,7 @@ return acc
 },{})
 // return grouped
 }
-console.log(groupByDate(logs));
+// console.log(groupByDate(logs));
 
 
 
@@ -217,6 +217,37 @@ for(let student of students){
 return result
 }
 // console.log(groupByMarks(students));
+
+
+
+
+const data = [
+  { country: "India", city: "Delhi", value: 10 },
+  { country: "India", city: "Mumbai", value: 20 },
+  { country: "US", city: "NY", value: 30 }
+];
+
+
+
+const groupBy=(datas,keys)=>{
+const grouped={};
+
+// console.log(keys);
+for(let key of keys){
+  console.log(key);
+  for(let data of datas){
+    grouped[data[key]]= grouped[data[key]]||[]
+    grouped[data[key]].push(data)
+  }
+}
+
+
+return grouped
+}
+console.log(groupBy(data, ["country", "city"]));
+
+
+
 
 
 
